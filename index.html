@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clínica Vaz | Psicologia e Bem-Estar</title>
+    <meta
+      name="description"
+      content="Clínica de Psicologia especializada em terapia cognitivo-comportamental, terapia de casal e autoconhecimento. Agende sua consulta."
+    />
+
+    <!-- Segurança e Performance -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    <meta name="robots" content="index, follow" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+
+    <!-- Google Fonts (Otimizado) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com" defer></script>
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header
+      id="main-header"
+      class="fixed w-full top-0 z-50 transition-all duration-300 py-4"
+    >
+      <div class="container mx-auto px-6 flex justify-between items-center">
+        <!-- Logo -->
+        <a
+          href="#"
+          class="text-2xl font-bold tracking-wide flex items-center gap-2"
+          style="font-family: var(--font-heading); color: var(--color-primary)"
+        >
+          <i class="bi bi-flower1"></i> Clínica Vaz
+        </a>
+
+        <!-- Desktop Menu -->
+        <nav
+          class="hidden md:flex items-center space-x-8 text-sm font-medium tracking-wide"
+        >
+          <a href="#home" class="hover:text-emerald-700 transition-colors"
+            >Início</a
+          >
+          <a href="#sobre" class="hover:text-emerald-700 transition-colors"
+            >Sobre</a
+          >
+          <a href="#servicos" class="hover:text-emerald-700 transition-colors"
+            >Serviços</a
+          >
+          <a
+            href="#depoimentos"
+            class="hover:text-emerald-700 transition-colors"
+            >Depoimentos</a
+          >
+          <a href="#contato" class="btn-custom py-2 px-6 rounded-full"
+            >Agendar</a
+          >
+        </nav>
+
+        <!-- Mobile Toggle -->
+        <button
+          id="mobile-btn"
+          class="md:hidden text-2xl text-gray-700 focus:outline-none"
+          aria-label="Menu"
+        >
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Menu (Hidden by default) -->
+      <div
+        id="mobile-menu"
+        class="hidden absolute top-full left-0 w-full bg-white shadow-lg border-t md:hidden"
+      >
+        <div class="flex flex-col p-6 space-y-4 text-center">
+          <a
+            href="#home"
+            class="mobile-link text-gray-700 hover:text-emerald-700"
+            >Início</a
+          >
+          <a
+            href="#sobre"
+            class="mobile-link text-gray-700 hover:text-emerald-700"
+            >Sobre</a
+          >
+          <a
+            href="#servicos"
+            class="mobile-link text-gray-700 hover:text-emerald-700"
+            >Serviços</a
+          >
+          <a
+            href="#depoimentos"
+            class="mobile-link text-gray-700 hover:text-emerald-700"
+            >Depoimentos</a
+          >
+          <a href="#contato" class="text-emerald-700 font-bold"
+            >Agendar Consulta</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="relative h-[600px] max-md:h-[1000px] md:min-h-screen flex items-center pt-20"
+    >
+      <!-- Imagem de Fundo (Natureza calma/Abstrata) -->
+      <!-- <div class="absolute inset-0 z-0">
+        <img
+          src="https://images.unsplash.com/photo-1629904853716-6b284e386347?q=80&w=2070&auto=format&fit=crop"
+          alt="Ambiente terapêutico calmo"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div class="absolute inset-0 hero-overlay z-10"></div> -->
+
+      <div
+        class="container mx-auto px-6 relative z-20 grid md:grid-cols-2 gap-12 items-center text-center md:text-left"
+      >
+        <!-- Texto Hero -->
+        <div class="reveal">
+          <span
+            class="text-sm uppercase tracking-widest font-bold mb-4 block"
+            style="color: var(--color-primary)"
+            >Bem-vindo à Clínica Vaz</span
+          >
+          <h1
+            class="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 text-gray-900"
+          >
+            Reencontre o seu <br />
+            <span class="italic text-emerald-800">equilíbrio interior.</span>
+          </h1>
+          <p
+            class="text-lg md:text-xl text-gray-700 mb-8 max-w-lg leading-relaxed mx-auto md:mx-0"
+          >
+            Um espaço seguro e acolhedor para sua jornada de autoconhecimento.
+            Psicologia clínica focada no seu bem-estar mental e emocional.
+          </p>
+          <div
+            class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start"
+          >
+            <a
+              href="#contato"
+              class="btn-custom py-3 px-8 rounded-full text-center md:text-left shadow-lg"
+            >
+              Agendar Consulta
+            </a>
+            <a
+              href="#sobre"
+              class="btn-outline py-3 px-8 rounded-full text-center md:text-left"
+            >
+              Conheça a Dra. Helena
+            </a>
+          </div>
+        </div>
+
+        <!-- Imagem da Doutora no Hero -->
+        <div class="max-md: md:block relative reveal reveal-delay-200">
+          <!-- <div
+            class="absolute inset-0 bg-emerald-900 rounded-tl-[80px] rounded-br-[80px] transform translate-x-4 translate-y-4 opacity-10"
+          ></div> -->
+          <img
+            src="assets/images/psicologa01.png"
+            alt="Dra. Helena Vaz sorrindo"
+            class="relative max-w-full md:h-[600px] max-md:max-h-[550px] max-md:h-full md:w-[550px] object-cover mx-auto rounded-tl-[80px] rounded-br-[80px] shadow-2xl border-4 border-white/50 hover:scale-[1.01] transition-transform duration-500"
+          />
+
+          <!-- Card flutuante decorativo -->
+          <div
+            class="absolute bottom-3 left-9 max-md:left-9 max-md:bottom-3 bg-white p-4 max-md:p-3 rounded-xl shadow-lg flex items-center gap-2 animate-bounce"
+            style="animation-duration: 3s"
+          >
+            <div
+              class="w-10 h-10 max-md:w-8 max-md:h-8 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-700"
+            >
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <div>
+              <p
+                class="text-xs text-gray-500 font-bold uppercase max-md:hidden"
+              >
+                Avaliação
+              </p>
+              <p class="font-bold text-gray-800">
+                5.0 <span class="max-md:hidden">Estrelas</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section id="sobre" class="py-20 md:py-32 bg-white overflow-hidden">
+      <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+          <div class="relative reveal order-2 md:order-1 justify-self-center">
+            <!-- Imagem decorativa -->
+            <div
+              class="absolute -top-4 -left-4 w-24 h-24 bg-secondary rounded-full opacity-50"
+              style="background-color: var(--color-secondary)"
+            ></div>
+            <div
+              class="absolute -bottom-4 -right-4 w-32 h-32 border-2 border-emerald-700 rounded-full opacity-20"
+            ></div>
+            <img
+              src="assets/images/psicologa02.png"
+              alt="Dra. Helena Vaz Atendendo"
+              class="relative rounded-lg shadow-2xl max-w-full h-[500px] object-cover hover:scale-105 transition-all duration-700"
+            />
+          </div>
+
+          <div class="reveal reveal-delay-200 order-1 md:order-2">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
+              Sobre a
+              <span style="color: var(--color-primary)">Especialista</span>
+            </h2>
+            <h3 class="text-xl font-bold mb-4 text-gray-600">
+              Dra. Helena Vaz
+              <span class="text-md font-normal text-gray-500 block mt-1"
+                >CRP 05/12345</span
+              >
+            </h3>
+
+            <p class="text-gray-600 mb-6 leading-relaxed">
+              Com mais de 10 anos de experiência clínica, dedico minha carreira
+              a ajudar pessoas a navegarem por seus desafios emocionais com
+              empatia e técnica científica.
+            </p>
+            <p class="text-gray-600 mb-8 leading-relaxed">
+              Minha abordagem integra a Terapia Cognitivo-Comportamental com
+              práticas de Mindfulness, criando um ambiente onde cada paciente se
+              sente ouvido, validado e capaz de promover mudanças reais em sua
+              vida.
+            </p>
+
+            <ul class="space-y-4 mb-8">
+              <li class="flex items-center gap-3">
+                <i class="bi bi-check-circle-fill text-emerald-700 text-xl"></i>
+                <span class="text-gray-700">Mestre em Psicologia Clínica</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i class="bi bi-check-circle-fill text-emerald-700 text-xl"></i>
+                <span class="text-gray-700"
+                  >Especialista em Ansiedade e Depressão</span
+                >
+              </li>
+              <li class="flex items-center gap-3">
+                <i class="bi bi-check-circle-fill text-emerald-700 text-xl"></i>
+                <span class="text-gray-700"
+                  >Atendimento Humanizado e Sigiloso</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Estatísticas Section -->
+    <section
+      id="stats"
+      class="py-16 md:py-24"
+      style="background-color: var(--color-accent)"
+    >
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <div class="reveal reveal-delay-100">
+            <p
+              class="text-5xl md:text-6xl font-bold mb-2 text-emerald-900"
+              data-count-target="10"
+            >
+              <span class="stat-counter">0</span>+
+            </p>
+            <p class="text-lg uppercase font-bold tracking-wider text-primary">
+              Anos de Experiência
+            </p>
+          </div>
+
+          <div class="reveal reveal-delay-200">
+            <p
+              class="text-5xl md:text-6xl font-bold mb-2 text-emerald-900"
+              data-count-target="500"
+            >
+              <span class="stat-counter">0</span>+
+            </p>
+            <p class="text-lg uppercase font-bold tracking-wider text-primary">
+              Pacientes Atendidos
+            </p>
+          </div>
+
+          <div class="reveal reveal-delay-300">
+            <p
+              class="text-5xl md:text-6xl font-bold mb-2 text-emerald-900"
+              data-count-target="98"
+            >
+              <span class="stat-counter">0</span>%
+            </p>
+            <p class="text-lg uppercase font-bold tracking-wider text-primary">
+              Taxa de Satisfação
+            </p>
+          </div>
+
+          <div class="reveal reveal-delay-400">
+            <p
+              class="text-5xl md:text-6xl font-bold mb-2 text-emerald-900"
+              data-count-target="6"
+            >
+              <span class="stat-counter">0</span>+
+            </p>
+            <p class="text-lg uppercase font-bold tracking-wider text-primary">
+              Abordagens Terapêuticas
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Serviços Section -->
+    <section id="servicos" class="py-20 md:py-32 relative text-white">
+      <div class="container mx-auto px-6">
+        <div
+          class="text-center max-w-2xl mx-auto mb-16 reveal reveal-delay-100"
+        >
+          <span
+            class="text-sm font-bold tracking-widest uppercase mb-2 block text-emerald-200"
+            >Áreas de Atuação</span
+          >
+          <h2 class="text-4xl md:text-5xl font-bold text-emerald-50 mb-4">
+            Como posso ajudar?
+          </h2>
+          <div class="w-20 h-1 bg-emerald-500 mx-auto rounded-full"></div>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Card 1 -->
+          <div
+            class="service-card rounded-xl shadow-md overflow-hidden cursor-pointer reveal reveal-delay-100"
+            onclick="openModal('Terapia Individual', 'Um espaço seguro e confidencial focado totalmente em você. Através da Terapia Cognitivo-Comportamental, trabalhamos questões como ansiedade, depressão, estresse e traumas, buscando identificar padrões de pensamento e comportamento para promover uma vida mais leve e autêntica.')"
+          >
+            <div class="h-56 overflow-hidden">
+              <img
+                src="assets/images/servicos/psico-individual.jpg"
+                alt="Terapia Individual"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-8">
+              <h3 class="text-2xl font-bold mb-4 text-gray-800">
+                Terapia Individual
+              </h3>
+              <p class="text-gray-600 mb-6 leading-relaxed">
+                Espaço seguro para explorar questões pessoais, ansiedade e
+                autoconhecimento.
+              </p>
+              <button
+                class="text-emerald-700 font-bold hover:underline flex items-center gap-2"
+              >
+                Saiba mais <i class="bi bi-plus-circle"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="service-card rounded-xl shadow-md reveal reveal-delay-200 overflow-hidden cursor-pointer"
+            onclick="openModal('Terapia de Casal', 'O relacionamento também precisa de cuidados. A terapia de casal oferece um ambiente neutro para melhorar a comunicação, resolver conflitos recorrentes e realinhar objetivos de vida, fortalecendo o vínculo afetivo e a parceria.')"
+          >
+            <div class="h-56 overflow-hidden">
+              <img
+                src="assets/images/servicos/psico-casal.jpg"
+                alt="Terapia de Casal"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-8">
+              <h3 class="text-2xl font-bold mb-4 text-gray-800">
+                Terapia de Casal
+              </h3>
+              <p class="text-gray-600 mb-6 leading-relaxed">
+                Resolução de conflitos, melhora na comunicação e fortalecimento
+                do vínculo.
+              </p>
+              <button
+                class="text-emerald-700 font-bold hover:underline flex items-center gap-2"
+              >
+                Saiba mais <i class="bi bi-plus-circle"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="service-card rounded-xl shadow-md reveal reveal-delay-300 overflow-hidden cursor-pointer"
+            onclick="openModal('Atendimento Online', 'A mesma qualidade e ética do atendimento presencial, com a flexibilidade de realizar a sessão onde você estiver. Ideal para quem tem rotina agitada, viaja muito ou mora em outra cidade/país. As sessões ocorrem via plataforma segura.')"
+          >
+            <div class="h-56 overflow-hidden">
+              <img
+                src="assets/images/servicos/psico-online.jpg"
+                alt="Atendimento Online"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-8">
+              <h3 class="text-2xl font-bold mb-4 text-gray-800">
+                Atendimento Online
+              </h3>
+              <p class="text-gray-600 mb-6 leading-relaxed">
+                Qualidade e ética do presencial, com o conforto de estar onde
+                você quiser.
+              </p>
+              <button
+                class="text-emerald-700 font-bold hover:underline flex items-center gap-2"
+              >
+                Saiba mais <i class="bi bi-plus-circle"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div
+            class="service-card rounded-xl shadow-md reveal reveal-delay-100 overflow-hidden cursor-pointer"
+            onclick="openModal('Orientação Profissional', 'Está em dúvida sobre qual carreira seguir ou pensando em transição de carreira? Este processo ajuda a identificar suas habilidades, valores e interesses para que você possa tomar decisões profissionais mais assertivas e satisfatórias.')"
+          >
+            <div class="h-56 overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&auto=format&fit=crop"
+                alt="Orientação Profissional"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-8">
+              <h3 class="text-2xl font-bold mb-4 text-gray-800">
+                Orientação Profissional
+              </h3>
+              <p class="text-gray-600 mb-6 leading-relaxed">
+                Suporte para escolhas de carreira, transição profissional e
+                planejamento.
+              </p>
+              <button
+                class="text-emerald-700 font-bold hover:underline flex items-center gap-2"
+              >
+                Saiba mais <i class="bi bi-plus-circle"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div
+            class="service-card rounded-xl shadow-md reveal reveal-delay-200 overflow-hidden cursor-pointer"
+            onclick="openModal('Psicoterapia Infantil', 'Utilizando a ludoterapia (terapia através do brincar), ajudamos crianças a expressarem suas emoções, lidarem com medos, ansiedades e dificuldades escolares. O processo envolve orientação constante aos pais.')"
+          >
+            <div class="h-56 overflow-hidden">
+              <img
+                src="assets/images/servicos/psico-infantil.jpg"
+                alt="Psicoterapia Infantil"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-8">
+              <h3 class="text-2xl font-bold mb-4 text-gray-800">
+                Psicoterapia Infantil
+              </h3>
+              <p class="text-gray-600 mb-6 leading-relaxed">
+                Acompanhamento lúdico para lidar com emoções e desenvolvimento
+                da criança.
+              </p>
+              <button
+                class="text-emerald-700 font-bold hover:underline flex items-center gap-2"
+              >
+                Saiba mais <i class="bi bi-plus-circle"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div
+            class="service-card rounded-xl shadow-md reveal reveal-delay-300 overflow-hidden cursor-pointer"
+            onclick="openModal('Grupos Terapêuticos', 'Grupos focados em temas específicos como ansiedade, luto ou habilidades sociais. A troca de experiências com outras pessoas que passam por situações semelhantes cria uma rede de apoio poderosa e curativa.')"
+          >
+            <div class="h-56 overflow-hidden">
+              <img
+                src="assets/images/servicos/psico-grupo.jpg"
+                alt="Grupos Terapêuticos"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-8">
+              <h3 class="text-2xl font-bold mb-4 text-gray-800">
+                Grupos Terapêuticos
+              </h3>
+              <p class="text-gray-600 mb-6 leading-relaxed">
+                Troca de experiências e suporte mútuo mediado profissionalmente.
+              </p>
+              <button
+                class="text-emerald-700 font-bold hover:underline flex items-center gap-2"
+              >
+                Saiba mais <i class="bi bi-plus-circle"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Depoimentos (CTA estratégico) -->
+    <section id="depoimentos" class="py-20 bg-white border-b border-gray-100">
+      <div class="container mx-auto px-6">
+        <div class="mb-16">
+          <h2
+            class="text-3xl md:text-4xl font-bold text-center text-gray-900 reveal"
+          >
+            O que dizem os pacientes
+            <div
+              class="w-20 h-1 bg-emerald-500 mx-auto rounded-full mt-4"
+            ></div>
+          </h2>
+
+          <!-- Descrição dos depoimentos -->
+          <p
+            class="text-center text-xl text-gray-600 mt-6 max-w-2xl mx-auto reveal reveal-delay-200"
+          >
+            Depoimentos de pessoas que encontraram equilíbrio e bem-estar
+            através da terapia na Clínica Vaz.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+          <!-- Testimonial 1 -->
+          <div
+            class="bg-transparent shadow-md p-10 rounded-2xl relative reveal border border-emerald-700 border-opacity-25"
+          >
+            <i
+              class="bi bi-quote absolute -top-5 left-2 text-6xl text-emerald-700 opacity-25 -z-10"
+            ></i>
+            <p class="text-gray-600 italic mb-6">
+              "A Dra. Helena me ajudou a enxergar situações sob uma nova
+              perspectiva. As sessões online foram fundamentais para minha
+              rotina agitada."
+            </p>
+            <div class="flex items-center gap-4">
+              <div
+                class="w-10 h-10 rounded-full bg-gray-300 flex items-center justify-center text-gray-500 font-bold"
+              >
+                M
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-900">Mariana S.</h4>
+                <span class="text-xs text-gray-500">Terapia Online</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div
+            class="bg-transparent shadow-md p-10 rounded-2xl relative reveal reveal-delay-100 border border-emerald-700 border-opacity-25"
+          >
+            <i
+              class="bi bi-quote absolute -top-5 left-2 text-6xl text-emerald-700 opacity-25 -z-10"
+            ></i>
+            <p class="text-gray-600 italic mb-6">
+              "O ambiente da clínica é extremamente acolhedor. Sinto que
+              finalmente encontrei um espaço onde posso ser eu mesmo sem
+              julgamentos."
+            </p>
+            <div class="flex items-center gap-4">
+              <div
+                class="w-10 h-10 rounded-full bg-gray-300 flex items-center justify-center text-gray-500 font-bold"
+              >
+                R
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-900">Ricardo A.</h4>
+                <span class="text-xs text-gray-500">Terapia Presencial</span>
+              </div>
+            </div>
+          </div>
+          <!-- Testimonial 3 -->
+          <div
+            class="bg-transparent shadow-md p-10 rounded-2xl relative reveal reveal-delay-200 border border-emerald-700 border-opacity-25"
+          >
+            <i
+              class="bi bi-quote absolute -top-5 left-2 text-6xl text-emerald-700 opacity-25 -z-10"
+            ></i>
+            <p class="text-gray-600 italic mb-6">
+              "Fazer terapia de casal salvou nosso relacionamento. Aprendemos a
+              nos comunicar de verdade. Recomendo de olhos fechados."
+            </p>
+            <div class="flex items-center gap-4">
+              <div
+                class="w-10 h-10 rounded-full bg-gray-300 flex items-center justify-center text-gray-500 font-bold"
+              >
+                C
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-900">Carla e João</h4>
+                <span class="text-xs text-gray-500">Terapia de Casal</span>
+              </div>
+            </div>
+          </div>
+          <!-- Testimonial 4 -->
+          <div
+            class="bg-transparent shadow-md p-10 rounded-2xl relative reveal reveal-delay-200 border border-emerald-700 border-opacity-25"
+          >
+            <i
+              class="bi bi-quote absolute -top-5 left-2 text-6xl text-emerald-700 opacity-25 z-10"
+            ></i>
+            <p class="text-gray-600 italic mb-6">
+              "A psicoterapia infantil ajudou meu filho a lidar com suas emoções
+              de forma saudável. Estamos muito satisfeitos com o progresso."
+            </p>
+            <div class="flex items-center gap-4">
+              <div
+                class="w-10 h-10 rounded-full bg-gray-300 flex items-center justify-center text-gray-500 font-bold"
+              >
+                S
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-900">Sueli</h4>
+                <span class="text-xs text-gray-500">Psicoterapia Infantil</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato / Informações Section -->
+    <section id="contato" class="py-20 md:py-32 relative">
+      <div class="container mx-auto px-6">
+        <div
+          class="bg-white rounded-3xl shadow-2xl overflow-hidden grid lg:grid-cols-5"
+        >
+          <!-- Informações (Lado Esquerdo) -->
+          <div
+            class="lg:col-span-2 p-10 md:p-14 text-white flex flex-col justify-between"
+            style="background-color: var(--color-primary)"
+          >
+            <div>
+              <h2 class="text-3xl font-bold mb-6">Entre em Contato</h2>
+              <p class="text-white/80 mb-8 leading-relaxed">
+                Dê o primeiro passo para o seu bem-estar. Preencha o formulário
+                ou utilize nossos canais diretos.
+              </p>
+
+              <div class="space-y-6">
+                <div class="flex items-start gap-4">
+                  <i
+                    class="bi bi-geo-alt-fill text-xl mt-1 text-emerald-300"
+                  ></i>
+                  <div>
+                    <h4 class="font-bold text-lg">Localização</h4>
+                    <p class="text-white/80 text-sm">
+                      Av. da Paz, 1234, Sala 501<br />Centro Empresarial -
+                      Salvador, BA
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                  <i
+                    class="bi bi-envelope-fill text-xl mt-1 text-emerald-300"
+                  ></i>
+                  <div>
+                    <h4 class="font-bold text-lg">Email</h4>
+                    <p class="text-white/80 text-sm">
+                      contato@clinicavaz.com.br
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                  <i class="bi bi-whatsapp text-xl mt-1 text-emerald-300"></i>
+                  <div>
+                    <h4 class="font-bold text-lg">Whatsapp</h4>
+                    <p class="text-white/80 text-sm">(71) 98832-7708</p>
+                  </div>
+                </div>
+
+                <!-- Horário de Atendimento (Novo) -->
+                <div
+                  class="flex items-start gap-4 pt-4 border-t border-white/20"
+                >
+                  <i class="bi bi-clock-fill text-xl mt-1 text-emerald-300"></i>
+                  <div>
+                    <h4 class="font-bold text-lg">Horários</h4>
+                    <p class="text-white/80 text-sm">
+                      Seg - Sex: 08:00 - 19:00
+                    </p>
+                    <p class="text-white/80 text-sm">Sáb: 08:00 - 12:00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-12">
+              <h4 class="font-bold mb-4">Siga-nos</h4>
+              <div class="flex gap-4">
+                <a
+                  href="https://instagram.com/fael.front"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-white hover:text-emerald-900 transition-colors"
+                >
+                  <i class="bi bi-instagram"></i>
+                </a>
+                <a
+                  href="https://linkedin.com/in/rafaelsfront"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-white hover:text-emerald-900 transition-colors"
+                >
+                  <i class="bi bi-linkedin"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Formulário (Lado Direito) -->
+          <div class="lg:col-span-3 p-10 md:p-14 bg-white">
+            <form id="contactForm" class="space-y-6">
+              <div class="grid md:grid-cols-2 gap-6">
+                <div class="group">
+                  <label
+                    for="name"
+                    class="block text-sm font-bold text-gray-700 mb-2"
+                    >Nome Completo</label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 form-input transition-all placeholder-gray-400"
+                    placeholder="Seu nome"
+                  />
+                </div>
+                <div class="group">
+                  <label
+                    for="phone"
+                    class="block text-sm font-bold text-gray-700 mb-2"
+                    >Telefone/Whatsapp</label
+                  >
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    required
+                    class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 form-input transition-all placeholder-gray-400"
+                    placeholder="(71) 99999-9999"
+                  />
+                </div>
+              </div>
+
+              <div class="group">
+                <label
+                  for="email"
+                  class="block text-sm font-bold text-gray-700 mb-2"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 form-input transition-all placeholder-gray-400"
+                  placeholder="seu@email.com"
+                />
+              </div>
+
+              <div class="group">
+                <label
+                  for="serviceArea"
+                  class="block text-sm font-bold text-gray-700 mb-2"
+                  >Área de Atuação de Interesse</label
+                >
+                <div class="relative">
+                  <select
+                    id="serviceArea"
+                    name="serviceArea"
+                    required
+                    class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 form-input transition-all appearance-none"
+                  >
+                    <option value="" disabled selected>
+                      Selecione um serviço
+                    </option>
+                    <option value="Terapia Individual">
+                      Terapia Individual
+                    </option>
+                    <option value="Terapia de Casal">Terapia de Casal</option>
+                    <option value="Atendimento Online">
+                      Atendimento Online
+                    </option>
+                    <option value="Orientação Profissional">
+                      Orientação Profissional
+                    </option>
+                    <option value="Psicoterapia Infantil">
+                      Psicoterapia Infantil
+                    </option>
+                    <option value="Grupos Terapêuticos">
+                      Grupos Terapêuticos
+                    </option>
+                    <option value="Outros">Outros</option>
+                  </select>
+                  <div
+                    class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700"
+                  >
+                    <i class="bi bi-chevron-down"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="group">
+                <label
+                  for="message"
+                  class="block text-sm font-bold text-gray-700 mb-2"
+                  >Mensagem</label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  required
+                  class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 form-input transition-all placeholder-gray-400 resize-none"
+                  placeholder="Olá, gostaria de saber mais sobre os horários..."
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="w-full btn-custom py-4 rounded-lg font-bold text-lg shadow-md hover:shadow-xl flex justify-center items-center gap-2"
+              >
+                <span>Enviar Mensagem</span>
+                <i class="bi bi-send"></i>
+              </button>
+
+              <!-- Mensagem de Feedback (Hidden default) -->
+              <div
+                id="form-feedback"
+                class="hidden p-4 rounded-lg bg-emerald-50 text-emerald-800 text-sm text-center border border-emerald-200"
+              >
+                Mensagem enviada com sucesso! Entraremos em contato em breve.
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8 border-t border-gray-800">
+      <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+          <!-- Col 1 -->
+          <div>
+            <a
+              href="#"
+              class="text-2xl font-bold tracking-wide flex items-center gap-2 mb-6 font-serif"
+            >
+              <i class="bi bi-flower1 text-emerald-400"></i> Clínica Vaz
+            </a>
+            <p class="text-gray-400 text-sm leading-relaxed mb-6">
+              Promovendo saúde mental e qualidade de vida através de um
+              atendimento ético, acolhedor e baseado em evidências.
+            </p>
+          </div>
+
+          <!-- Col 2: Links Rápidos -->
+          <div>
+            <h4
+              class="text-lg font-bold mb-6 border-b border-gray-700 pb-2 inline-block"
+            >
+              Links Rápidos
+            </h4>
+            <ul class="space-y-3 text-gray-400 text-sm">
+              <li>
+                <a href="#home" class="hover:text-emerald-400 transition-colors"
+                  >Início</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#sobre"
+                  class="hover:text-emerald-400 transition-colors"
+                  >Sobre a Clínica</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#depoimentos"
+                  class="hover:text-emerald-400 transition-colors"
+                  >Depoimentos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contato"
+                  class="hover:text-emerald-400 transition-colors"
+                  >Fale Conosco</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Serviços -->
+          <div>
+            <h4
+              class="text-lg font-bold mb-6 border-b border-gray-700 pb-2 inline-block"
+            >
+              Serviços
+            </h4>
+            <ul class="space-y-3 text-gray-400 text-sm">
+              <li>
+                <a
+                  href="#servicos"
+                  class="hover:text-emerald-400 transition-colors"
+                  >Psicoterapia Individual</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#servicos"
+                  class="hover:text-emerald-400 transition-colors"
+                  >Terapia de Casal</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#servicos"
+                  class="hover:text-emerald-400 transition-colors"
+                  >Atendimento Online</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#servicos"
+                  class="hover:text-emerald-400 transition-colors"
+                  >Orientação Profissional</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#servicos"
+                  class="hover:text-emerald-400 transition-colors"
+                  >Psicoterapia Infantil</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="#servicos"
+                  class="hover:text-emerald-400 transition-colors"
+                  >Grupos Terapêuticos</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Col 4: Redes -->
+          <div>
+            <h4
+              class="text-lg font-bold mb-6 border-b border-gray-700 pb-2 inline-block"
+            >
+              Conecte-se
+            </h4>
+            <div class="flex gap-4">
+              <a
+                href="https://linkedin.com/in/rafaelsfront"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-10 h-10 rounded bg-gray-800 flex items-center justify-center hover:bg-blue-600 transition-colors"
+              >
+                <i class="bi bi-linkedin"></i>
+              </a>
+              <a
+                href="https://github.com/1faeell"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-10 h-10 rounded bg-gray-800 flex items-center justify-center hover:bg-gray-600 transition-colors"
+              >
+                <i class="bi bi-github"></i>
+              </a>
+              <a
+                href="https://instagram.com/fael.front"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-10 h-10 rounded bg-gray-800 flex items-center justify-center hover:bg-pink-600 transition-colors"
+              >
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a
+                href="https://wa.me/5571988327708"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-10 h-10 rounded bg-gray-800 flex items-center justify-center hover:bg-green-500 transition-colors"
+              >
+                <i class="bi bi-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Footer -->
+        <div
+          class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500"
+        >
+          <p>&copy; 2025 Clínica Vaz. Todos os direitos reservados.</p>
+          <p class="mt-2 md:mt-0 flex items-center gap-1">
+            Desenvolvido por
+            <a
+              href="https://portfolio-fael.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-emerald-400 hover:text-emerald-300 font-bold transition-colors"
+              >Rafael S.</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Service Modal (Oculto por padrão) -->
+    <div
+      id="service-modal"
+      class="fixed inset-0 z-[60] hidden flex items-center justify-center p-4"
+    >
+      <!-- Backdrop -->
+      <div
+        class="absolute inset-0 bg-black/60 backdrop-blur-sm transition-opacity"
+        id="modal-backdrop"
+      ></div>
+
+      <!-- Content -->
+      <div
+        class="relative bg-white w-full max-w-lg mx-auto rounded-2xl shadow-2xl transform transition-all scale-95 opacity-0 duration-300 flex flex-col max-h-[90vh]"
+        id="modal-content"
+      >
+        <!-- Header do Modal -->
+        <div
+          class="p-6 border-b border-gray-100 flex justify-between items-center bg-gray-50 rounded-t-2xl"
+        >
+          <h3
+            id="modal-title"
+            class="text-2xl font-bold text-gray-800 font-serif"
+          >
+            Título do Serviço
+          </h3>
+          <button
+            id="close-modal-btn"
+            class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-gray-200 text-gray-500 transition-colors"
+          >
+            <i class="bi bi-x-lg"></i>
+          </button>
+        </div>
+
+        <!-- Corpo do Modal -->
+        <div class="p-8 overflow-y-auto">
+          <p id="modal-desc" class="text-gray-600 leading-relaxed text-lg mb-6">
+            Descrição detalhada do serviço...
+          </p>
+
+          <h4
+            class="font-bold text-gray-800 mb-3 text-sm uppercase tracking-wide"
+          >
+            Benefícios
+          </h4>
+          <ul class="space-y-2 mb-8">
+            <li class="flex items-center gap-2 text-gray-600">
+              <i class="bi bi-check-circle text-emerald-600"></i> Atendimento
+              personalizado
+            </li>
+            <li class="flex items-center gap-2 text-gray-600">
+              <i class="bi bi-check-circle text-emerald-600"></i> Ambiente
+              seguro e sigiloso
+            </li>
+            <li class="flex items-center gap-2 text-gray-600">
+              <i class="bi bi-check-circle text-emerald-600"></i> Abordagem
+              baseada em evidências
+            </li>
+          </ul>
+
+          <a
+            href="#contato"
+            onclick="closeModal()"
+            class="block w-full btn-custom py-3 rounded-lg text-center font-bold shadow-md hover:shadow-lg"
+          >
+            Agendar este serviço
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript funcionalidade -->
+    <script src="js/main.js" defer></script>
+  </body>
+</html>

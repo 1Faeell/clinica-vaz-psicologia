@@ -1,0 +1,186 @@
+/* ========================================
+        ÁREA DE EDIÇÃO DO TEMA (VARIÁVEIS)
+        ========================================
+        */
+:root {
+  /* Cores Principais */
+  --color-primary: #3a5a40; /* Verde Sálvia Escuro */
+  --color-secondary: #dad7cd; /* Bege Areia */
+  --color-accent: #a3b18a; /* Verde Claro */
+  --color-text-dark: #344e41; /* Texto Escuro */
+  --color-text-light: #ffffff; /* Texto Claro */
+  --color-bg-light: #fdfbf7; /* Fundo Geral */
+
+  /* Fontes */
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Lato", sans-serif;
+}
+
+/* Configurações Globais */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-text-dark);
+  background-color: var(--color-bg-light);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+}
+
+/* Utilitários de Cores */
+.text-primary {
+  color: var(--color-primary);
+}
+.bg-primary {
+  background-color: var(--color-primary);
+}
+.bg-secondary {
+  background-color: var(--color-secondary);
+}
+
+/* Botões Personalizados */
+.btn-custom {
+  background-color: var(--color-primary);
+  color: var(--color-text-light);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn-custom:hover {
+  background-color: var(--color-text-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(58, 90, 64, 0.25);
+}
+
+.btn-outline {
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background-color: var(--color-primary);
+  color: var(--color-text-light);
+}
+
+/* Animações de Entrada (Scroll) */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay-100 {
+  transition-delay: 0.1s;
+}
+.reveal-delay-200 {
+  transition-delay: 0.2s;
+}
+.reveal-delay-300 {
+  transition-delay: 0.3s;
+}
+
+/* Header Glassmorphism */
+.glass-header {
+  background: rgba(253, 251, 247, 0.9);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+/* Hero Image Overlay */
+.hero-overlay {
+  background: linear-gradient(
+    to right,
+    rgba(253, 251, 247, 0.95) 0%,
+    rgba(253, 251, 247, 0.85) 50%,
+    rgba(253, 251, 247, 0.4) 100%
+  );
+}
+
+#servicos {
+  background: linear-gradient(
+    to bottom,
+    rgba(58, 90, 64, 0.925),
+    rgba(58, 90, 64, 0.625)
+  );
+}
+/* #servicos::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #3a5a407a;
+        z-index: -1;
+      } */
+
+/* Cards de Serviços */
+.service-card {
+  background: var(--color-bg-light);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: 1px solid transparent;
+  cursor: pointer;
+  /* filter: brightness(1.1); */
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.06),
+    0 10px 10px -5px rgba(0, 0, 0, 0.02);
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  border-color: var(--color-secondary);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.08),
+    0 10px 10px -5px rgba(0, 0, 0, 0.02);
+}
+
+.service-card img {
+  transition: transform 0.5s ease;
+}
+
+.service-card:hover img {
+  transform: scale(1.05);
+}
+
+/* .service-icon {
+        color: var(--color-primary);
+        transition: transform 0.3s ease;
+      }
+
+      .service-card:hover .service-icon {
+        transform: scale(1.5);
+      } */
+
+/* Modal Styles */
+.modal-open {
+  overflow: hidden;
+}
+
+#service-modal {
+  backdrop-filter: blur(5px);
+}
+
+/* Inputs do Formulário */
+.form-input:focus {
+  border-color: var(--color-primary);
+
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(163, 177, 138, 0.2);
+}
